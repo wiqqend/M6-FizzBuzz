@@ -1,5 +1,7 @@
 // TODO: Define constants for the form and the result display area
-
+let userinput = document.getElementById('numberInput');
+let submit = document.getElementById('submitBtn');
+let result = document.getElementById('result');
 // TODO: Add the first line of the event listener to handle form submission
 
     // Prevent the form from refreshing the page
