@@ -12,19 +12,24 @@ let inputnum = Number(userinput.value);
 // TODO: Write FizzBuzz logic here
 if (inputnum % 15 === 0) {
     output = "FizzBuzz";
+    return output;
 }
-if (inputnum % 3 === 0) {
+else if (inputnum % 3 === 0) {
     output = "Fizz";
+    return output;
 }
-if (inputnum % 5 === 0) {
+else if (inputnum % 5 === 0) {
     output = "Buzz";
+    return output;
+}
+else if (isNaN(inputnum)) {
+    output = "Enter a number";
+    return output;
 }
 else {
     output = inputnum;
-
+    return output;
 }
-
-
 }
 // If divisible by both 3 and 5, set the output to "FizzBuzz"
 // If divisible by 3, set the output to "Fizz"
